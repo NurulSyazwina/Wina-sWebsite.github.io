@@ -1,0 +1,182 @@
+<html>
+<head>
+  <title>My Fav Food & Drink</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    article {
+      width: 100%;
+      background-color: #802711ac;
+      text-align: center;
+      padding: 30px;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .leftcolumn, .rightcolumn {
+      width: 48%;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff8e1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .rightcolumn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-inputs {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #802711ac;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #fff;
+      box-sizing: border-box;
+      transition: border 0.3s ease;
+    }
+
+    .contact-inputs:focus {
+      outline: none;
+      border-color: #9e3c2f;
+      box-shadow: 0 0 8px rgba(158, 60, 47, 0.6);
+    }
+
+    button {
+      padding: 12px 20px;
+      background-color: #802711ac;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9e3c2f;
+    }
+
+    .social-icons a {
+      margin: 10px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="family.html">Family</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="home.html">Home</a>
+
+    <b><div class="datetime-container">
+      <div class="date" id="date"></div>
+      <div class="day" id="day"></div>    
+      <div class="clock" id="clock"></div>
+    </div></b>
+  </div>
+
+  <header class="header">
+    <img src="header.jpg" alt="header image">
+  </header>
+
+  <section>
+    <article>
+      <h1 style="font-size: 30px; font-family: 'Times New Roman', Times, serif; color: bisque;"><i>Contact Me</i></h1>
+      <div class="container">
+        <div class="leftcolumn"> 
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="81546b30-3ad5-4568-ae72-432ab5df9a62">
+            <p><b>Name:</b></p>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <p><b>Email:</b></p>
+            <input type="email" name="name" placeholder="Your Email" class="contact-inputs" required>
+            <p><b>Message:</b></p>
+            <p><textarea style="height: 200px;" name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            </p><button type="submit">Submit!</button>
+          </form>
+        </div>
+
+        <div class="rightcolumn">
+          <a href="contactme1-img.jpg"><img src="contactme1-img.jpg" width="600px" alt="Contact Image"></a>
+          <p>To get in touch, send an email to <b>nurulsyazwina70@gmail.com</b> or call me at <b>+60 11-3655 0014</b>.
+            You can also connect with me on social media:</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nrulyaz/?hl=en" target="_blank">
+              <img src="Instagram_icon.png.webp" alt="Instagram" style="width: 45px;height: 45px;">
+            </a>
+            <a href="https://x.com/iwnalcemo?t=zF8DiMaUz1Eoclg9cEfcKA&s=08" target="_blank">
+              <img src="x-logo.png" alt="x" style="width: 45px;height: 45px;">
+            </a>
+            <a href="https://www.tiktok.com/@yaz20832?_t=8rpVTNFEU4u&_r=1" target="_blank">
+              <img src="tiktok-logo.jpg" alt="TikTok" style="width: 50px;height: 50px;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <embed src="background-music.mp3" hidden="true"></embed>
+
+  <footer>
+    <p>© 2024 Wina's Website. All rights reserved.</p>
+  </footer>
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString('en-US', options);
+      
+      const optionsDay = { weekday: 'long' };
+      const formattedDay = now.toLocaleDateString('en-US', optionsDay);
+      
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; 
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      const formattedTime = hours + ':' + minutes + ' ' + ampm;
+  
+      document.getElementById('date').textContent = formattedDate;
+      document.getElementById('day').textContent = formattedDay;
+      document.getElementById('clock').textContent = formattedTime;
+    }
+  
+    setInterval(updateDateTime, 1000);
+    
+    updateDateTime();
+  </script>
+</body>
+</html>
