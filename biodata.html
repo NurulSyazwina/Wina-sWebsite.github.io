@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>My Biodata</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+  article {
+    width: 100%;
+    background-color: #802711ac;
+    text-align: center ;
+    padding: 30px;
+    height: auto;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .column{
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #802711ac;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+  .leftcolumn{
+    width:40%;
+    padding: 20px;
+    border: 2px solid #802711ac;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+  .rightcolumn{
+    width:60%;
+    padding: 20px;
+    border: 2px solid #802711ac;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+  .star li{
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  .star li::before{
+    content:"★";
+    font-size:20px;
+    margin-right: 10px;
+  }
+  .summary{
+    width: 55%; 
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  video {
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .btn{
+    padding: 15px 30px;
+    background-color: #802711ac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .btn-hover{
+    background-color: #9e3c2f;
+  }
+
+</style>
+<body>
+
+  <div class="topnav">
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="family.html">Family</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="home.html">Home</a>
+
+    <b><div class="datetime-container">
+      <div class="date" id="date"></div>
+      <div class="day" id="day"></div>    
+      <div class="clock" id="clock"></div>
+    </div></b>
+</div>
+
+<header class="header">
+  <img src="header.jpg" alt="header image">
+</header>
+
+<section>
+  <article>
+    <h1 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: bisque;"><i>My Biodata</i></h1>
+
+    <div class="container">
+      <div class="leftcolumn">
+    <p></p><table style="float: right;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >
+      <p style="font-size: 20px;"><b>About Me</b></p>
+        <td rowspan="8"><a href="wina1.jpg"><img src="wina1.jpg" alt="myself" width="200px" style="float: center; border: none;"></a>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Name</b></td>
+        <td>Nurul Syazwina binti Shoib  </td>
+      </tr>
+      <tr>
+        <td><b>Age</b></td>
+        <td>20 Years Old</td>
+      </tr>
+      <tr>
+        <td><b>Date of Birth</b></td>
+        <td>23<sup>rd</sup> December 2004</td>
+      </tr>
+      <tr>
+        <td><b>Gender</b></td>
+        <td>Female</td>
+      </tr>
+      <tr>
+        <td><b>Race</b></td>
+        <td>Malay</td>
+      </tr>
+      <tr>
+        <td><b>City</b></td>
+        <td>Selangor</td>
+      </tr>
+      <tr>
+        <td><b>Nationality</b></td>
+        <td>Malaysia</td>
+      </tr>
+    </table>
+  </div>
+    
+ 
+
+  
+  <div class="rightcolumn" style="font-family: 'Courier New', Courier, monospace;"><b>
+      <p style="text-align: justify;">Assalamualaikum and Hello! My name is Nurul Syazwina binti Shoib, and I'm so excited to tell you a little bit about me. I was born on 23<sup>rd</sup> December 2004 in 
+      the beautful city of Selangor, Malaysia, and now I'm 20 years old. I'm now currently study at Universiti Teknologi MARA (UiTM) Campus Segamat, Johor, where I'm in my last year of Diploma. 
+      In my free time, I love to reading books. I could spent hour diving in reading a fiction novel such as "Empayar" by Teme Abdullah, "Jika Aku" by Anna Lee, "Trio" by Hanani Natasya and more.
+      When I'm not reading, I enjoy imagining my own stories or talking about books with my friends. I also love spending time with my family, especially when everyone gathers together.
+     We enjoy eating meals together, chatting, and sometimes playing games or watching movies. These moments make me appreciate my family even more.</p>
+     <div style="display: flex; justify-content: space-between;">
+      <div style="width:50%;">
+     <ol style="text-align: left;"><p style="font-size: 18px; text-decoration: underline;">My Favourite Author</p>
+      <li>
+        Teme Abdullah
+      </li>
+      <li>
+        Anna Lee
+      </li>
+      <li>
+        Abstrakim
+      </li>
+      <li>
+        Hanani Natasya
+      </li>
+    </ol>
+    </div>
+    <div style="width: 48%;">
+    <ul style="text-align: left;"><p style="font-size: 18px; text-decoration: underline;">My Favourite books</p>
+      <li>
+        Empayar
+      </li>
+      <li>
+        Introvert
+      </li>
+      <li>
+        Jika Aku
+      </li>
+      <li>
+        Trio
+      </li>
+    </ul>
+  </div>
+</div>
+    <ul class="star"><p style="font-size: 18px; text-decoration: underline;">Songs I enjoy while studying or reading</p>
+    <li><a href="https://youtu.be/jqduqwMeaA0?si=xMAFJzZyX6DD0WbW" target="_blank">Mimpi-Aisyah Aziz</a></li>
+    <li><a href="https://youtu.be/tP_GiBW5sug?si=YdtbJjayIylZfIyg" target="_blank">Susun Silang Kata-Aizat Amdan</a></li>
+    <li><a href="https://youtu.be/AQpEIZ8dNcU?si=qAZrgW_1sOEQgG-3" target="_blank">Gala bunga Matahari-Sal Priadi</a></li>
+  </ul></b>
+</div>
+</div>
+<div class="column" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+  <p style="font-size: 18px; text-decoration: underline;" >Favourite Kdrama Series</p>
+  <video controls>
+    <source src="kdramavideo.mp4" alt="video kdrama" type="video/mp4">
+  </video>
+  <p>"Daily Dose of Sunshine" is a South Korean drama about <b>Jung Da-hee</b>, a young nurse working at a 
+    psychiatric hospital. The story follows her as she cares for patients with mental health issues while also dealing
+     with her own personal struggles. Da-hee is kind and compassionate, but she faces emotional challenges as she helps her patients heal.
+
+    The drama explores themes of mental health, healing, and empathy, showing how Da-hee learns to take care of 
+    herself while supporting others. It also touches on the stigma around mental illness and the importance of human 
+    connection in overcoming struggles.</p>
+   </div>
+  </div>
+</div>
+<button class="btn" onclick="location.href='home.html'">Back</button>
+<button class="btn" onclick="location.href='experience.html'">Next</button>
+  </article>
+</section>
+
+<footer>
+  <p>© 2024 Wina's Website. All rights reserved.</p>
+</footer>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+    
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+    
+    const optionsDay = { weekday: 'long' };
+    const formattedDay = now.toLocaleDateString('en-US', optionsDay);
+    
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; 
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    const formattedTime = hours + ':' + minutes + ' ' + ampm;
+
+    document.getElementById('date').textContent = formattedDate;
+    document.getElementById('day').textContent = formattedDay;
+    document.getElementById('clock').textContent = formattedTime;
+  }
+
+  setInterval(updateDateTime, 1000);
+  
+  updateDateTime();
+</script>
+
+
+</body>
+</html>
+

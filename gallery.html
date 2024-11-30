@@ -1,0 +1,207 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+    .gallery-container {
+      width: 100%;
+      overflow: hidden; 
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      animation: scroll 20s linear infinite;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer; 
+      transition: all 0.3s ease;
+    }
+
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); 
+      }
+    }
+
+    
+    .gallery:hover {
+      animation-play-state: paused; 
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05); 
+    }
+
+    article {
+      width: 100%;
+      background-color: #802711ac;
+      text-align: center;
+      padding: 30px;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .column {
+      width: 100%;
+      margin-top: 40px;
+      padding: 20px;
+      border: 2px solid #802711ac;
+      border-radius: 10px;
+      background-color: bisque;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #802711ac;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .btn-hover {
+      background-color: #9e3c2f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="family.html">Family</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="home.html">Home</a>
+
+    <b><div class="datetime-container">
+      <div class="date" id="date"></div>
+      <div class="day" id="day"></div>    
+      <div class="clock" id="clock"></div>
+    </div></b>
+  </div>
+
+  <header class="header">
+    <img src="header.jpg" alt="header image">
+  </header>
+
+  <section>
+    <article>
+      <h1 style="font-size: 30px; font-family: 'Times New Roman', Times, serif; color: bisque;"><i>My Gallery</i></h1>
+
+      <div class="gallery-container">
+        <div class="gallery">
+          <a href="gallery1.jpg"><img src="gallery1.jpg" alt="Image Gallery 1"></a>
+          <a href="gallery2.jpg"><img src="gallery2.jpg" alt="Image Gallery 2"></a>
+          <a href="gallery3.jpg"><img src="gallery3.jpg" alt="Image Gallery 3"></a>
+          <a href="gallery4.jpg"><img src="gallery4.jpg" alt="Image Gallery 4"></a>
+          <a href="gallery5.jpg"><img src="gallery5.jpg" alt="Image Gallery 5"></a>
+          <a href="gallery6.jpg"><img src="gallery6.jpg" alt="Image Gallery 6"></a>
+          <a href="gallery7.jpg"><img src="gallery7.jpg" alt="Image Gallery 7"></a>
+          <a href="gallery8.jpg"><img src="gallery8.jpg" alt="Image Gallery 8"></a>
+        </div>
+      </div></br>
+
+      <div class="gallery-container">
+        <div class="gallery">
+          <a href="gallery9.jpg"><img src="gallery9.jpg" alt="Image Gallery 9"></a>
+          <a href="gallery10.jpg"><img src="gallery10.jpg" alt="Image Gallery 10"></a>
+          <a href="gallery11.jpg"><img src="gallery11.jpg" alt="Image Gallery 11"></a>
+          <a href="gallery12.jpg"><img src="gallery12.jpg" alt="Image Gallery 12"></a>
+          <a href="gallery13.jpg"><img src="gallery13.jpg" alt="Image Gallery 13"></a>
+          <a href="gallery14.jpg"><img src="gallery14.jpg" alt="Image Gallery 14"></a>
+          <a href="gallery15.jpg"><img src="gallery15.jpg" alt="Image Gallery 15"></a>
+          <a href="gallery16.jpg"><img src="gallery16.jpg" alt="Image Gallery 16"></a>
+        </div>
+      </div></br>
+
+      <div class="gallery-container">
+        <div class="gallery">
+          <a href="gallery17.jpg"><img src="gallery17.jpg" alt="Image Gallery 17"></a>
+          <a href="gallery18.jpg"><img src="gallery18.jpg" alt="Image Gallery 18"></a>
+          <a href="gallery19.jpg"><img src="gallery19.jpg" alt="Image Gallery 19"></a>
+          <a href="gallery20.jpg"><img src="gallery20.jpg" alt="Image Gallery 20"></a>
+          <a href="gallery21.jpg"><img src="gallery21.jpg" alt="Image Gallery 21"></a>
+          <a href="gallery22.jpg"><img src="gallery22.jpg" alt="Image Gallery 22"></a>
+          <a href="gallery23.jpg"><img src="gallery23.jpg" alt="Image Gallery 23"></a>
+          <a href="gallery24.jpg"><img src="gallery24.jpg" alt="Image Gallery 24"></a>
+        </div>
+      </div></br>
+
+      <div class="gallery-container">
+        <div class="gallery">
+          <a href="gallery25.jpg"><img src="gallery25.jpg" alt="Image Gallery 25"></a>
+          <a href="gallery26.jpg"><img src="gallery26.jpg" alt="Image Gallery 26"></a>
+          <a href="gallery27.jpg"><img src="gallery27.jpg" alt="Image Gallery 27"></a>
+          <a href="gallery28.jpg"><img src="gallery28.jpg" alt="Image Gallery 28"></a>
+          <a href="gallery29.jpg"><img src="gallery29.jpg" alt="Image Gallery 29"></a>
+          <a href="gallery30.jpg"><img src="gallery30.jpg" alt="Image Gallery 30"></a>
+          <a href="gallery31.jpg"><img src="gallery31.jpg" alt="Image Gallery 31"></a>
+          <a href="gallery32.jpg"><img src="gallery32.jpg" alt="Image Gallery 32"></a>
+        </div>
+      </div>
+
+      <button class="btn" onclick="location.href='family.html'">Back</button>
+      <button class="btn" onclick="location.href='contact.html'">Next</button>
+
+    </article>
+  </section>
+
+  <embed src="background-music.mp3" hidden="true"></embed>
+
+  <footer>
+    <p>© 2024 Wina's Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString('en-US', options);
+      
+      const optionsDay = { weekday: 'long' };
+      const formattedDay = now.toLocaleDateString('en-US', optionsDay);
+      
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; 
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      const formattedTime = hours + ':' + minutes + ' ' + ampm;
+  
+      document.getElementById('date').textContent = formattedDate;
+      document.getElementById('day').textContent = formattedDay;
+      document.getElementById('clock').textContent = formattedTime;
+    }
+  
+    setInterval(updateDateTime, 1000);
+    
+    updateDateTime();
+  </script>
+</body>
+</html>
